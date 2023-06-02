@@ -2,6 +2,7 @@ import {FiPhoneCall} from 'react-icons/fi'
 import {MdEmail} from 'react-icons/md'
 import {BsTwitter,BsYoutube} from 'react-icons/bs'
 import {FaFacebook} from 'react-icons/fa'
+import { Link } from "react-router-dom"
 
 export default function Navbar() {
     return (
@@ -41,11 +42,15 @@ export default function Navbar() {
                 <div className='basis-1/2'>
                     <img alt='iCriC' src='./logo.jpg' className='lg:w-[175px] w-[100px] h-[49px] lg:h-[69px]'/>
                 </div>
-                <div className='flex flex-row justify-center ml-auto max-lg:hidden lg:gap-6 lg:text-lg'>
-                    <a href='/'>About</a>
+                <div className='flex flex-row justify-center ml-auto max-lg:hidden lg:gap-6 lg:text-lg'>                
+                    <Link to={"/about"}>
+                        About
+                    </Link>
                     <a href='/'>Leagues & Events</a>
                     <a href='/'>Gallery</a>
-                    <a href='/'>Contact Us</a>
+                    <Link to={"/contact"}>
+                        Contact Us
+                    </Link>
                 </div>
                 <div className='hidden ml-auto max-lg:visible'>
                     Hamburger
