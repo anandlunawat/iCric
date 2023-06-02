@@ -1,7 +1,7 @@
-import {FiPhoneCall} from 'react-icons/fi'
-import {MdEmail} from 'react-icons/md'
-import {BsTwitter,BsYoutube} from 'react-icons/bs'
-import {FaFacebook} from 'react-icons/fa'
+import { FiPhoneCall } from 'react-icons/fi'
+import { MdEmail } from 'react-icons/md'
+import { BsTwitter, BsYoutube } from 'react-icons/bs'
+import { FaFacebook } from 'react-icons/fa'
 import { Link } from "react-router-dom"
 
 export default function Navbar() {
@@ -26,11 +26,11 @@ export default function Navbar() {
                             <a href="tel: +447834763489">+447834763489, </a>
                             <a href="tel: +447717886882">+447717886882 </a>
                         </div>
-                    </div>                    
+                    </div>
                     <div className="flex px-1 lg:border-r-[1px] gap-2 items-center lg:border-[#9B9B9B] flex-row text-white">
                         <MdEmail />
                         <a href="mailto:info@icric.com">info@icric.com</a>
-                    </div>                    
+                    </div>
                     <div className="flex flex-row items-center gap-2 px-1 text-white">
                         <BsTwitter />
                         <FaFacebook />
@@ -39,15 +39,18 @@ export default function Navbar() {
                 </div>
             </div>
             <div className='flex flex-row items-center justify-center mt-4 mb-0 ml-4 mr-4 lg:mt-5 lg:gap-8 lg:mb-0 lg:m-12'>
-                <div className='basis-1/2'>
-                    <img alt='iCriC' src='./logo.jpg' className='lg:w-[175px] w-[100px] h-[49px] lg:h-[69px]'/>
-                </div>
-                <div className='flex flex-row justify-center ml-auto max-lg:hidden lg:gap-6 lg:text-lg'>                
+                <Link to={"/"}>
+                    <div className='basis-1/2'>
+                        <img alt='iCriC' src='./logo.jpg' className='lg:w-[175px] w-[100px] h-[49px] lg:h-[69px]' />
+                    </div>
+                </Link>
+                <div className='flex flex-row justify-center ml-auto max-lg:hidden lg:gap-6 lg:text-lg'>
                     <Link to={"/about"}>
-                        About
+                        About Us
                     </Link>
-                    <a href='/'>Leagues & Events</a>
-                    <a href='/'>Gallery</a>
+                    <a href='/'>Leagues</a>
+                    <a href='/'>Why iCric</a>
+                    <a href='/'>Live Scores</a>
                     <Link to={"/contact"}>
                         Contact Us
                     </Link>
