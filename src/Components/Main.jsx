@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import LiveMatch from "./LiveMatch";
+import Cards from "./Cards";
 
 export default function MainIcric() {
     return (
@@ -27,6 +28,7 @@ export default function MainIcric() {
                     </div>
                 </div>
             </div>
+            <Cards />
         </div>
     )
 }
