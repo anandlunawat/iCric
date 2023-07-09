@@ -1,4 +1,4 @@
-export default function Cards() {
+export default function Cards({match}) {
     return (
         <div className="flex flex-col w-[30%] gap-3 rounded-2xl border-[1px] shadow-lg p-4 m-4">
             <span className="text-xl font-medium">Result</span>

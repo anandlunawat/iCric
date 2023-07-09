@@ -9,6 +9,7 @@ export const getMatches = async () => {
     url: `${apiConfig.url}/clubs/id/icr228/matches`,
     headers: {
       "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*",
       apiKey: authConfig.apiKey,
       Token: authConfig.Token,
     },
