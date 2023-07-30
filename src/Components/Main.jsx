@@ -1,9 +1,18 @@
 import { Link } from "react-router-dom";
 import LiveMatch from "./LiveMatch";
 import Cards from "./Cards";
+import { AiOutlineArrowRight } from 'react-icons/ai'
 import ScoresCarousel from "./ScoresCarousel";
 
 export default function MainIcric() {
+
+  function scroll() {
+    let id = document.getElementById("carousel")
+    console.log("In Scroll")
+    document.getElementById("carousel-container").scrollLeft += window.innerWidth
+    id.classList.add("scroll-right")
+}
+
   return (
     <div>
       <div className="flex flex-col w-full bg-no-repeat max-sm:bg-contain max-lg:bg-contain 2xl:bg-cover bg-back">
@@ -63,9 +72,14 @@ export default function MainIcric() {
           </div>
         </div>
       </div>
-      <div className="overflow-x-auto">
-        <ScoresCarousel />
-      </div>    
+      <div className="relative">
+        <button onClick={scroll} className='absolute right-4 bg-[#88eb85e1] rounded-full text-xl p-3 top-[30%] z-50'>
+          <AiOutlineArrowRight style={{ color: "black" }} />
+        </button>
+        <div className="m-4 overflow-x-hidden" id="carousel-container">
+          <ScoresCarousel />
+        </div>
+      </div>
     </div>
   );
 }

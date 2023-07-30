@@ -1,0 +1,4 @@
+.scroll-right {    
+    /* transform: translateX(-100px); */
+    transition: transform 0.5s ease;
+}
