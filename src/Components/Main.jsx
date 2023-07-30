@@ -25,7 +25,7 @@ export default function MainIcric() {
           </button>
         </div>
         <div className="flex flex-col items-center justify-center">
-          <LiveMatch />
+          {/* <LiveMatch /> */}
           <div className="flex flex-row items-center sm:max-lg:h-[340px] justify-center max-sm:flex-col max-sm:w-full">
             <div className="flex flex-col bg-cover sm:max-lg:h-full gap-5 text-white text-base lg:h-[350px] basis-1/2 bg-no-repeat max-sm:p-8 sm:p-14 bg-cardBgG">
               <div className="max-sm:text-sm">
