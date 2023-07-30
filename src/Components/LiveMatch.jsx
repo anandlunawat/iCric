@@ -1,7 +1,7 @@
 export default function LiveMatch() {
     return (
         <div className="flex flex-col self-center w-11/12 justify-self-center">
-            <div className="flex flex-row max-md:w-[80%] bg-red-600 max-sm:w-[96%] gap-2 text-white px-14 max-sm:p-3 max-sm:bg-cover">
+            <div className="flex flex-row gap-2 text-white bg-red-600 px-14 max-sm:p-3 max-sm:bg-cover">
                 <span className="whitespace-pre max-sm:text-lg basis-1/4">• Live</span>
                 <div className="flex flex-row gap-2 basis-1/3">
                     <span className="whitespace-pre max-sm:text-sm">Team Name</span>

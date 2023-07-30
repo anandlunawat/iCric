@@ -16,6 +16,7 @@ export const getMatches = async () => {
   };
   try {
     const res = await axios(options);
+    // console.log("Line 19",res)
     return res;
   } catch (e) {
     console.log(e);

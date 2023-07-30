@@ -7,7 +7,7 @@ import { getMatches } from "../actions/matches";
 import { Link } from "react-router-dom";
 
 export default function Score() {
-  const [status, setStatus] = useState();
+  const [status, setStatus] = useState([]);
   useEffect(() => {
     (async () => {
       try {
@@ -68,14 +68,14 @@ export default function Score() {
           </div>
         </div>
         <div className="flex flex-row items-center justify-center">
-          <h1 className="text-white text-center text-3xl font-bold">
+          <h1 className="text-3xl font-bold text-center text-white">
             Live Matches
           </h1>
         </div>
         <div className="flex flex-row items-center justify-center">
-          {status.map((match) => {
+          {status && status.map((match,key) => {
             return match.matchStatus === "Completed" ? (
-              <Link to={`/scorecard/${match.matchId}`}>
+              <Link key={key} to={`/scorecard/${match.matchId}`}>
                 <Cards match={match} />
               </Link>
             ) : (
