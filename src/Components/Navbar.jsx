@@ -45,9 +45,9 @@ export default function Navbar() {
                     </div>
                 </Link>
                 <div className='flex flex-row justify-center ml-auto max-lg:hidden lg:gap-6 lg:text-lg'>
-                    {/* <Link to={"/about"}>
+                    <Link to={"/about"}>
                         About Us
-                    </Link> */}
+                    </Link>
                     <Link to={"/why-icric"}>Why iCric</Link>
                     <a href='/'>Live Scores</a>
                     <Link to={"/contact"}>
