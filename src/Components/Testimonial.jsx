@@ -6,7 +6,7 @@ export default function Testimonial() {
       <span className="self-center text-3xl font-extrabold text-indigo-900">
         Testimonials
       </span>
-      <div className="flex flex-row justify-center flex-wrap gap-20 mt-4 md:gap-32 max-sm:gap-10 md:w-full lg:flex lg:flex-row lg:w-auto lg:justify-center">
+      <div className="flex flex-row items-center justify-center mt-4 max-sm:flex-col max-md:flex-wrap">
         <TestimonialCards
           name="Icric UK"
           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip"
@@ -20,10 +20,6 @@ export default function Testimonial() {
           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip"
         />
       </div>
-
-      {/* <div className="flex flex-row justify-center flex-wrap gap-20 mt-4 md:gap-32 max-sm:gap-10 md:w-full">
-       
-      </div> */}
     </div>
   );
 }

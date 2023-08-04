@@ -6,7 +6,7 @@ export default function ContactUs() {
     return (
         <div className="flex flex-col gap-4 mt-3 mb-4">
             <span className="self-center text-3xl font-extrabold text-indigo-900">Contact Us</span>
-            <div className="flex flex-col w-full bg-indigo-900 lg:flex lg:flex-row">
+            <div className="flex flex-col w-full bg-[#0E2153] lg:flex lg:flex-row">
                 <form className="p-10 max-lg:order-2 basis-1/2">
                     <div className="flex flex-col gap-6">
                         <input type="text" placeholder="Full Name" className="w-full h-10 placeholder:p-2 bg-lime-500 placeholder:text-white" />

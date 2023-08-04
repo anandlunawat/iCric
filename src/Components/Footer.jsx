@@ -1,24 +1,33 @@
 import { Link } from "react-router-dom"
+import { FiPhoneCall } from 'react-icons/fi'
+import { MdEmail } from 'react-icons/md'
+import { BsTwitter, BsYoutube } from 'react-icons/bs'
+import { FaFacebook } from 'react-icons/fa'
 
 export default function Footer() {
     return (
-        <div className="flex flex-col gap-8 max-md:px-16 text-white max-md:self-start md:gap-40 md:flex-row bg-[#0E2153]">
-            <div className="flex flex-col gap-4 md:px-20 basis-1/3">
-                <span className="text-lg font-normal">Company</span>
-                <Link to={"/about"} className="text-lg font-normal">About Us</Link>
-                <span className="text-lg font-normal">Blog</span>
-                <a href="mailto:Connect@skitch.in" className="text-lg font-normal ">Contact Us</a>
+        <div className="flex flex-row gap-8 text-white sm:justify-center max-sm:px-16 px-20 max-md:flex-wrap pt-20 pb-4 sm:items-center bg-[#0E2153]">
+            <div className="flex flex-col gap-10 md:basis-1/3">
+                <div className="flex gap-2"><FiPhoneCall /><a href="tel: +447834763489">+447834763489, </a></div>
+                <div className="flex gap-2"><FiPhoneCall /><a href="tel: +447834763489">+447834763489, </a></div>
             </div>
-            <div className="flex flex-col gap-4 basis-1/3">
-                <span className="text-xl font-normal">For You</span>
-                <Link to={"/privacypolicy"} className="text-lg font-normal ">Privacy</Link>
-                <Link to={"/termsandcondition"} className="text-lg font-normal ">Terms</Link>
-                <Link to={"/refundpolicy"} className="text-lg font-normal ">Refund</Link>
+            <div className="flex flex-col gap-4 md:basis-1/3">
+                <div className="flex gap-4"><MdEmail />
+                    <a href="mailto:info@icric.com">info@icric.com</a>
+                </div>
+                <span>Copyright © icric Pvt.Ltd.</span>
+                <span>All rights reserved</span>
             </div>
-            <div className="flex flex-col gap-4 basis-1/3">
-                <span className="text-xl font-normal">Help</span>
-                <span className="text-lg font-normal ">FAQ s</span>
-                <a href="mailto:Connect@skitch.in" className="text-lg font-normal ">Contact Us</a>
+            <div className="flex flex-col gap-2 md:basis-1/3">
+                <div className="flex gap-2"><BsTwitter />
+                        <FaFacebook />
+                        <BsYoutube />
+                </div>                
+                <span>Rules</span>
+                <span>FAQ</span>
+                <span>Become A Sponsor</span>
+                <span>Franchise Opportunities</span>
+                <span>T%C's</span>
             </div>
         </div>
     )
