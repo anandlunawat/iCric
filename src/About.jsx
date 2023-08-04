@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import LiveMatch from "../Components/LiveMatch";
-import Poster from "../Components/Poster";
-import Team from "../Components/Team";
+import LiveMatch from "./Components/LiveMatch";
+import Poster from "./Components/Poster";
+import Team from "./Components/Team";
 
 export default function About() {
     return (

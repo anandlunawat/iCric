@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import ScoreTable from "../Components/ScoreTable";
+import ScoreTable from "./Components/ScoreTable";
 import { useState } from "react";
-import { getScorecard } from "../actions/scorecard";
+import { getScorecard } from "./actions/scorecard";
 
 export default function DetailedScore({ match }) {
   const [score, setScore] = useState();

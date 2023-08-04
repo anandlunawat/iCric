@@ -1,8 +1,8 @@
 import React from 'react';
-import Poster from '../Components/Poster';
-import Team from '../Components/Team';
-import Why from '../Components/Why';
-import Testimonial from '../Components/Testimonial';
+import Poster from './Components/Poster';
+import Team from './Components/Team';
+import Why from './Components/Why';
+import Testimonial from './Components/Testimonial';
 
 
 export default function WhyIcric() {

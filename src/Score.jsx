@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
-import ScoreTable from "../Components/ScoreTable";
+import ScoreTable from "./Components/ScoreTable";
 import { useState } from "react";
-import { getScorecard } from "../actions/scorecard";
-import Cards from "../Components/Cards";
-import { getMatches } from "../actions/matches";
+import { getScorecard } from "./actions/scorecard";
+import Cards from "./Components/Cards";
+import { getMatches } from "./actions/matches";
 import { Link } from "react-router-dom";
 
 export default function Score() {

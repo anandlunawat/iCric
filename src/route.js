@@ -1,9 +1,9 @@
 import ContactUs from "./Components/HomeContact.jsx";
 import MainIcric from "./Components/Main.jsx";
-import Score from "./pages/Score.jsx";
-import DetailedScore from "./pages/DetailedScore.jsx";
-import About from "./pages/About.jsx";
-import WhyIcric from "./pages/WhyIcric.jsx";
+import Score from "./Score.jsx";
+import DetailedScore from "./DetailedScore.jsx";
+import About from "./About.jsx";
+import WhyIcric from "./WhyIcric.jsx";
 
 const routes = [
   {
