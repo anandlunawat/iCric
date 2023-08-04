@@ -19,15 +19,14 @@ export default function Footer() {
                 <span>All rights reserved</span>
             </div>
             <div className="flex flex-col gap-2 md:whitespace-pre md:basis-1/3 md:items-center md:justify-center">
-                <div className="flex gap-2 md:self-start md:px-48"><BsTwitter />
+                <div className="flex gap-2 md:self-start ml:px-48"><BsTwitter />
                         <FaFacebook />
                         <BsYoutube />
                 </div>                
-                <span className="md:self-start md:px-48">Rules</span>
-                <span className="md:self-start md:px-48">FAQ</span>
-                <span className="md:self-start md:px-48">Become A Sponsor</span>
-                <span className="md:self-start md:px-48">Franchise Opportunities</span>
-                <span className="md:self-start md:px-48">T%C's</span>
+                <span className="md:self-start ml:px-48">FAQ</span>
+                <span className="md:self-start ml:px-48">Become A Sponsor</span>
+                <span className="md:self-start ml:px-48">Franchise Opportunities</span>
+                <span className="md:self-start ml:px-48">T%C's</span>
             </div>
         </div>
     )
