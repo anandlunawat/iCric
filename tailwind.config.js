@@ -8,7 +8,8 @@ module.exports = {
       backgroundImage : {
         'back' : "url('../public/background.png')",
         'cardBgG' : "url('../public/CardImage.png')",
-        'cardBgB' : "url('../public/CardImageB.png')"
+        'cardBgB' : "url('../public/CardImageB.png')",
+        'contact' : "url('../public/home_contact.jpg')"
       },
     },
   },
