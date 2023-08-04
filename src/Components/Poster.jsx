@@ -2,7 +2,7 @@ export default function Poster(props) {
     return (
         <div className="z-50 flex flex-col self-center gap-3 text-white justify-self-center max-lg:mt-3 max-lg:order-1 bg-opacity-70">
             <div className='relative'>
-                <img src={props.url} className='w-full max-sm:h-[250px] h-[500px] max-md:h-[350px] md:h-[450px]' />
+                <img src={props.url} className='w-full max-sm:h-[250px] max-md:h-[350px] md:h-[500px]' />
             </div>
             {/* <div className={`absolute ${props.h1 === "About Us" ? "bg-[#1b52a4b3]" : ""} flex flex-col w-full lg:h-[550px] gap-10 text-white max-lg:p-6 max-md:gap-4 max-sm:gap-8`}> */}
             <div className={`absolute flex flex-col w-full lg:h-[550px] gap-10 text-white max-lg:p-6 max-md:gap-4 max-sm:gap-8`}>
