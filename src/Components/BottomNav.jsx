@@ -7,26 +7,6 @@ import { Link } from "react-router-dom"
 export default function BottomNav() {
     return (
         <div className="flex flex-col">
-            <div className="flex flex-row bg-[#0E2153] lg:h-10 items-center justify-center">
-                <div className="flex flex-col gap-2 ml-auto lg:ml-auto lg:flex lg:flex-row lg:m-12">
-                    <div className="flex px-1 lg:border-r-[1px] gap-2 items-center lg:border-[#9B9B9B] flex-row text-white">
-                        <FiPhoneCall />
-                        <div className='max-lg:flex max-lg:flex-col'>
-                            <a href="tel: +447834763489">+447834763489, </a>
-                            <a href="tel: +447717886882">+447717886882 </a>
-                        </div>
-                    </div>
-                    <div className="flex px-1 lg:border-r-[1px] gap-2 items-center lg:border-[#9B9B9B] flex-row text-white">
-                        <MdEmail />
-                        <a href="mailto:info@icric.com">info@icric.com</a>
-                    </div>
-                    <div className="flex flex-row items-center gap-2 px-1 text-white">
-                        <BsTwitter />
-                        <FaFacebook />
-                        <BsYoutube />
-                    </div>
-                </div>
-            </div>
             <div className='flex flex-row items-center justify-center mt-4 mb-0 ml-4 mr-4 lg:mt-5 lg:gap-8 lg:mb-0 lg:m-12'>
                 <Link to={"/"}>
                     <div className='basis-1/2'>
