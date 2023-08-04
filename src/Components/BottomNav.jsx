@@ -4,21 +4,10 @@ import { BsTwitter, BsYoutube } from 'react-icons/bs'
 import { FaFacebook } from 'react-icons/fa'
 import { Link } from "react-router-dom"
 
-export default function Navbar() {
+export default function BottomNav() {
     return (
         <div className="flex flex-col">
             <div className="flex flex-row bg-[#0E2153] lg:h-10 items-center justify-center">
-                <div className="flex flex-col items-start justify-center gap-2 m-4 lg:m-12 lg:gap-2 lg:flex lg:flex-row">
-                    <div className="text-white px-1 lg:border-r-[1px] lg:border-[#9B9B9B]">
-                        India
-                    </div>
-                    <div className="px-1 text-white lg:border-r-[1px] lg:border-[#9B9B9B]">
-                        Europe
-                    </div>
-                    <div className="px-1 text-white lg:border-r-[1px] lg:border-[#9B9B9B]">
-                        USA
-                    </div>
-                </div>
                 <div className="flex flex-col gap-2 ml-auto lg:ml-auto lg:flex lg:flex-row lg:m-12">
                     <div className="flex px-1 lg:border-r-[1px] gap-2 items-center lg:border-[#9B9B9B] flex-row text-white">
                         <FiPhoneCall />

@@ -2,6 +2,7 @@ import Navbar from "./Navbar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import routes from "../route.js";
 import Footer from "./Footer";
+import BottomNav from "./BottomNav";
 
 export default function Layout({ children }) {
   return (
@@ -21,7 +22,7 @@ export default function Layout({ children }) {
         </Routes>
         <div>{children}</div>
         <Footer />
-        <Navbar />
+        <BottomNav />
       </BrowserRouter>
     </div>
   );
