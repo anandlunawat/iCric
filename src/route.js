@@ -1,4 +1,4 @@
-import About from "./pages/About";
+import About from "./pages/About.jsx";
 import ContactUs from "./Components/HomeContact.jsx";
 import MainIcric from "./Components/Main.jsx";
 import Score from "./pages/Score.jsx";
