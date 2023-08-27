@@ -9,7 +9,8 @@ module.exports = {
         'back' : "url('../public/background.png')",
         'cardBgG' : "url('../public/CardImage.png')",
         'cardBgB' : "url('../public/CardImageB.png')",
-        'contact' : "url('../public/home_contact.jpg')"
+        'contact' : "url('../public/home_contact.jpg')",
+        'about' : "url('../public/About.jpg')"
       },
     },
   },

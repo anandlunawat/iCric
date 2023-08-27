@@ -34,8 +34,8 @@ export default function MainIcric() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor ut labore
             </span>
-            <Link to={"/contact"}>
-              <button className="mt-auto p-3 border-2 border-solid w-[50%] rounded-md">
+            <Link to={"/contact"} className="mt-auto">
+              <button className="p-3 border-2 border-solid w-[50%] rounded-md">
                 <div className="flex flex-row items-center justify-center">
                   <span>Contact US</span>
                   <></>
