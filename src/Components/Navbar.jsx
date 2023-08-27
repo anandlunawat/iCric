@@ -3,10 +3,24 @@ import { MdEmail } from 'react-icons/md'
 import { BsTwitter, BsYoutube } from 'react-icons/bs'
 import { FaFacebook } from 'react-icons/fa'
 import { Link } from "react-router-dom"
+import Hamburger from './Hamburger'
+import {RxHamburgerMenu} from "react-icons/rx"
+import { useState } from 'react'
 
 export default function Navbar() {
+
+    const [hamburger,setHamburger] = useState(false)
+
+    function hideHamburger() {
+        setHamburger(false)
+        document.querySelector("body").style.overflow="auto"
+    }
+
     return (
         <div className="flex flex-col">
+            <div className='ml-auto text-2xl font-bold lg:hidden'>
+                <Hamburger hamburger={hamburger} hideHamburger={hideHamburger}/>
+            </div>
             <div className="flex flex-row bg-[#0E2153] lg:h-10 items-center justify-center">
                 <div className="flex flex-col items-start justify-center gap-2 m-4 lg:m-12 lg:gap-2 lg:flex lg:flex-row">
                     <div className="text-white px-1 lg:border-r-[1px] lg:border-[#9B9B9B]">
@@ -44,6 +58,9 @@ export default function Navbar() {
                         <img alt='iCriC' src='./logo.jpg' className='lg:w-[175px] w-[100px] h-[49px] lg:h-[69px]' />
                     </div>
                 </Link>
+                <button onClick={()=>{setHamburger(true);document.querySelector("body").style.overflow="hidden"}} className='ml-auto lg:hidden'>
+                    <RxHamburgerMenu />
+                </button>
                 <div className='flex flex-row justify-center ml-auto max-lg:hidden lg:gap-6 lg:text-lg'>
                     <Link to={"/about"}>
                         About Us
@@ -53,9 +70,6 @@ export default function Navbar() {
                     <Link to={"/contact"}>
                         Contact Us
                     </Link>
-                </div>
-                <div className='hidden ml-auto max-lg:visible'>
-                    Hamburger
                 </div>
             </div>
         </div>
